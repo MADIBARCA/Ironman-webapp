@@ -1,0 +1,30 @@
+.bannerWrapper {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), linear-gradient(90deg, #1FA2FF 0%, #12D8FA 76.32%, #A6FFCB 152.64%), #225CE6;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.32);
+    padding: 20px 80px;
+    gap: 471px;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    align-items: center;
+}
+
+.bannerRow {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    gap: 37.4px;
+}
+
+.bannerText {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+}

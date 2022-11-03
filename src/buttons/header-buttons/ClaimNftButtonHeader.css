@@ -1,0 +1,10 @@
+.claimNftHeaderText {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+}
