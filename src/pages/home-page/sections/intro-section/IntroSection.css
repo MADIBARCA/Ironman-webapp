@@ -1,0 +1,13 @@
+.IntroSection {
+    background: white;
+    max-height: 588px;
+    padding-top: 104px;
+    padding-bottom: 96px;
+}
+
+.IntroContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}   

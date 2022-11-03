@@ -1,0 +1,30 @@
+.introRightPart {
+  width: 51.25%;
+  display: flex;
+  flex-direction: column;
+  gap: 136px;
+}
+
+.introRightPart h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 72px;
+  letter-spacing: -0.03em;
+  color: #1c1c1a;
+  margin: 0;
+}
+
+.introRightPart h1 span {
+  display: block;
+  margin: 0;
+}
+
+.gradientTxt {
+  background: 
+    linear-gradient(89.66deg, #1fa2ff -10.44%, #12d8fa 51.95%, #a6ffcb 114.34%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

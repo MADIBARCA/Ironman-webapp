@@ -1,0 +1,31 @@
+.getFinisherRightPart {
+  width: 51.875%;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.getFinisherTxt {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.getFinisherTxt h1 {
+  margin: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 59px;
+  line-height: 68px;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+
+.getFinisherTxt p {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.8);
+}

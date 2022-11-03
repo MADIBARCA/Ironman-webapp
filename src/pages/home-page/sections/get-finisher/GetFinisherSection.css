@@ -1,0 +1,13 @@
+.getFinisher {
+    background: linear-gradient(90deg, #000000 -3.72%, #1C2339 112.19%);
+    max-height: 680px;
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
+.getFinisherContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}   
