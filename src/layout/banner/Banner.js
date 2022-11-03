@@ -1,4 +1,5 @@
 import xIcon from "../../assets/banner/x.png";
+import ClaimNftButtonHeader from "../../buttons/header-buttons/ClaimNftButtonHeader";
 
 import "./Banner.css";
 
@@ -11,6 +12,7 @@ const Banner = () => {
           Early Bird discount for Finishers who claim before 30th November
         </div>
       </div>
+      <ClaimNftButtonHeader />
     </div>
   );
 };
