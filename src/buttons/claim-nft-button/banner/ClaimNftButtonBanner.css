@@ -1,0 +1,22 @@
+.claimNftBannerWrapper {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+
+.claimNftBannerImg {
+    width: 14px;
+    height: 12px;
+    margin-left: 20px;
+}
+
+.claimNftBannerText {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+}

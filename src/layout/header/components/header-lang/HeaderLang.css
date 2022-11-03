@@ -1,0 +1,36 @@
+.headerLangWrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 6.52px;
+    padding-right: 13.64px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+
+    margin-right: 45.64px;
+    cursor: pointer;
+}
+
+.headerLangImg {
+    width: 24px;
+    height: 18px;
+}
+
+.headerLangText {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+
+    margin-left: 11px;
+    margin-right: 17.5px;
+}
+
+.headerLangArrowImg {
+    width: 12.73px;
+    height: 7.78px;
+}
