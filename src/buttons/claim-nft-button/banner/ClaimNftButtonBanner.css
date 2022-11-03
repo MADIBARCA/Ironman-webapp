@@ -1,16 +1,16 @@
-.claimNftHeaderWrapper {
+.claimNftBannerWrapper {
     display: flex;
     flex-direction: row;
     margin-left: auto;
 }
 
-.claimNftHeaderImg {
+.claimNftBannerImg {
     width: 14px;
     height: 12px;
     margin-left: 20px;
 }
 
-.claimNftHeaderText {
+.claimNftBannerText {
     font-family: 'Archivo';
     font-style: normal;
     font-weight: 500;

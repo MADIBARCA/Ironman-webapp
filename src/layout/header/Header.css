@@ -1,0 +1,23 @@
+.headerWrapper {
+    display: flex;
+    flex-direction: row;
+    height: 84px;
+    width: 100%;
+    padding: 17px 80px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+
+    justify-content: space-between;
+    position: absolute;
+    top: 92px;
+}
+
+.headerBlockDiv {
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    height: 100%;
+}
+

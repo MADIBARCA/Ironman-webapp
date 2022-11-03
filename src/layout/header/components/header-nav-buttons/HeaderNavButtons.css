@@ -1,0 +1,31 @@
+.headerNavButtonsWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+
+.headerNavButtonsWrapper button {
+    background: none;
+	border: none;
+	padding: 0;
+	outline: inherit;
+    
+    cursor: pointer;
+	
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    /* identical to box height, or 140% */
+
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+    margin-right: 40px;
+}
+
+.headerNavButtonsWrapper button:last-child {
+    margin-right: 0px;
+}
