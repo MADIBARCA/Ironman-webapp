@@ -3,6 +3,7 @@
 .buyNftSectionTitleWrapper {
     display: flex;
     flex-direction: column;
+    width: 602px;
 }
 
 .buyNftSectionTitleWrapper h1 {
@@ -22,6 +23,7 @@
 .buyNftSectionContentWrapper {
     display: flex;
     flex-direction: column;
+    width: 602px;
 }
 
 .buyNftSectionContentWrapper p {
