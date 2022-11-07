@@ -1,0 +1,43 @@
+.verificationTitleWrapper {
+    display: flex;
+    flex-direction: column;   
+}
+
+.verificationTitleImg {
+    width: 18px;
+    height: 7.5px;
+}
+
+.verificationTitleBack {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: #1C1C1A;
+}
+
+.verificationTitleWrapper h1 {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+    
+    letter-spacing: -0.02em;
+
+    color: #1A1C1C;
+}
+
+.verificationTitleWrapper p {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+    color: rgba(26, 28, 28, 0.6);
+    margin: 0;
+}
