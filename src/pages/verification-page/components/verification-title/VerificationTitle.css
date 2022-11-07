@@ -6,6 +6,14 @@
 .verificationTitleImg {
     width: 18px;
     height: 7.5px;
+    margin-right: 11px;
+}
+
+.verificationTitleWrapper div {
+    cursor: pointer;
+    height: 20px;
+    display: flex;
+    align-items: center;
 }
 
 .verificationTitleBack {
