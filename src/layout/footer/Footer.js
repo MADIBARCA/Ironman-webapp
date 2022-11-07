@@ -3,11 +3,11 @@ import "./Footer.css";
 import { footerMenu, footerSocial } from "./footerLinks.data";
 
 import IronmanLogo from "../../assets/footer/ironman-logo.png";
-import NftLabs from '../../assets/footer/nft-labs.png';
+import NftLabs from "../../assets/footer/nft-labs.png";
 
-const Footer = () => {
+const Footer = ({ contactRef }) => {
   return (
-    <section className="footerSection">
+    <section className="footerSection" ref={contactRef}>
       <div className="defaultContainer">
         <div className="footerContainer">
           <img src={IronmanLogo} className="footerLogo" />
@@ -30,8 +30,8 @@ const Footer = () => {
         </div>
       </div>
       <div className="footerBottom">
-      Powered by
-      <img src={NftLabs}/>
+        Powered by
+        <img src={NftLabs} />
       </div>
     </section>
   );

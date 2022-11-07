@@ -17,6 +17,10 @@
     z-index: 5;
 }
 
+.bannerWrapperDisabled {
+    display: none;
+}
+
 .bannerRow {
     display: flex;
     flex-direction: row;
@@ -32,4 +36,10 @@
     font-size: 18px;
     line-height: 28px;
     color: #FFFFFF;
+}
+
+.bannerImg {
+    cursor: pointer;
+    height: 12.73px;
+    width: 12.73px;
 }

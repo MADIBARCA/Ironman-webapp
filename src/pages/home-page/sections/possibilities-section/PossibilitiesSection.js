@@ -4,9 +4,9 @@ import columnData from "./possibilitiesSection.data";
 
 import "./PossibilitiesSection.css";
 
-const PossibilitiesSection = () => {
+const PossibilitiesSection = ({ featuresRef }) => {
   return (
-    <div className="defaultContainer">
+    <div className="defaultContainer" ref={featuresRef}>
       <seciton className="possibilitiesSection">
         <div className="possibilitiesSectionTop">
           <h1>Anything is possible</h1>
@@ -23,9 +23,9 @@ const PossibilitiesSection = () => {
               <div className="possibilitiesSectionTxtCol">
                 <h4>{el.title}</h4>
                 <p>{el.text}</p>
-              </div> 
-              
-              <img src={el.image}/>
+              </div>
+
+              <img src={el.image} />
             </div>
           ))}
         </div>

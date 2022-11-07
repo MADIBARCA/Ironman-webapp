@@ -3,12 +3,19 @@ import ClaimNftButtonBanner from "../../buttons/claim-nft-button/banner/ClaimNft
 import xIcon from "../../assets/banner/x.png";
 
 import "./Banner.css";
+import { useState } from "react";
 
 const Banner = () => {
+  const [bannerVisible, setBannerVisible] = useState(true);
   return (
-    <div className="bannerWrapper">
+    <div className={bannerVisible ? `bannerWrapper` : `bannerWrapperDisabled`}>
       <div className="bannerRow">
-        <img alt="cross icon" src={xIcon} height={12.73} width={12.73} />
+        <img
+          alt="cross icon"
+          src={xIcon}
+          className="bannerImg"
+          onClick={() => setBannerVisible(false)}
+        />
         <div className="bannerText">
           Early Bird discount for Finishers who claim before 30th November
         </div>

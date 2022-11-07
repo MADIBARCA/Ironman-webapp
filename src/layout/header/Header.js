@@ -5,12 +5,12 @@ import HeaderNavButtons from "./components/header-nav-buttons/HeaderNavButtons";
 
 import "./Header.css";
 
-const Header = () => {
+const Header = ({ refs, scrollHandler }) => {
   return (
     <div className="headerWrapper">
       <div className="headerBlockDiv">
         <HeaderLogo />
-        <HeaderNavButtons />
+        <HeaderNavButtons scrollHandler={scrollHandler} refs={refs} />
       </div>
       <div className="headerBlockDiv">
         <HeaderLang />

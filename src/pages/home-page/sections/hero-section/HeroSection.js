@@ -3,9 +3,9 @@ import HeroSectionTitle from "./components/HeroSectionTitle";
 
 import "./HeroSection.css";
 
-const HeroSection = () => {
+const HeroSection = ({ homeRef }) => {
   return (
-    <div className="heroSectionWrapper">
+    <div className="heroSectionWrapper" ref={homeRef}>
       <HeroSectionContent />
       <HeroSectionTitle />
     </div>
