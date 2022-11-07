@@ -6,7 +6,7 @@ import "./HeroSection.css";
 const HeroSection = ({ homeRef }) => {
   return (
     <div className="heroSectionWrapper" ref={homeRef}>
-      <HeroSectionContent />
+      <HeroSectionContent /> 
       <HeroSectionTitle />
     </div>
   );
