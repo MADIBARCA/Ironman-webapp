@@ -4,10 +4,11 @@ import HeroSection from "./sections/hero-section/HeroSection";
 import GetFinisherSection from "./sections/get-finisher-section/GetFinisherSection";
 import IntroSection from "./sections/intro-section/IntroSection";
 import PossibilitiesSection from "./sections/possibilities-section/PossibilitiesSection";
-
-import "./HomePage.css";
 import JoinSection from "./sections/join-section/JoinSection";
 import PartnersSection from "./sections/partners-section/PartnersSection";
+import BuyNftSection from "./sections/buy-nft-section/BuyNftSection";
+
+import "./HomePage.css";
 
 
 const HomePage = () => {
@@ -19,6 +20,7 @@ const HomePage = () => {
       <IntroSection />
       <GetFinisherSection />
       <PossibilitiesSection/>
+      <BuyNftSection />
       <JoinSection/>
       <PartnersSection/>
     </div>

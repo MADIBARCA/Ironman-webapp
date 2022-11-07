@@ -1,0 +1,13 @@
+.buyNftSectionWrapper {
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.buyNftSectionDiv {
+    display: flex;
+    flex-direction: row;
+}
