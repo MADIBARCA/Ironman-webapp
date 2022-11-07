@@ -1,11 +1,31 @@
 import "./HeaderNavButtons.css";
 
-const HeaderNavButtons = () => {
+const HeaderNavButtons = ({ refs, scrollHandler }) => {
   return (
     <div className="headerNavButtonsWrapper">
-      <button>Home</button>
-      <button>Features</button>
-      <button>Contact</button>
+      {/* 
+      <button
+        onClick={() => {
+          scrollHandler(refs.homeRef);
+        }}
+      >
+        Home
+      </button>
+      */}
+      <button
+        onClick={() => {
+          scrollHandler(refs.featuresRef);
+        }}
+      >
+        Features
+      </button>
+      <button
+        onClick={() => {
+          scrollHandler(refs.contactRef);
+        }}
+      >
+        Contact
+      </button>
     </div>
   );
 };

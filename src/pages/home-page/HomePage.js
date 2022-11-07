@@ -10,20 +10,37 @@ import BuyNftSection from "./sections/buy-nft-section/BuyNftSection";
 import Footer from "../../layout/footer/Footer";
 
 import "./HomePage.css";
+import { useRef } from "react";
 
 const HomePage = () => {
+  const homeRef = useRef(null);
+  const featuresRef = useRef(null);
+  const contactRef = useRef(null);
+  const refs = {
+    homeRef,
+    featuresRef,
+    contactRef,
+  };
+
+  const scrollHandler = (ref) => {
+    const headerHeight = 0;
+    let dims = ref.current.getBoundingClientRect();
+    window.scrollTo(window.scrollX, dims.top - headerHeight + window.scrollY);
+    dims = null;
+  };
+
   return (
     <div className="homePageWrapper">
       <Banner />
-      <Header />
-      <HeroSection />
+      <Header refs={refs} scrollHandler={scrollHandler} />
+      <HeroSection homeRef={refs.homeRef} />
       <IntroSection />
       <GetFinisherSection />
-      <PossibilitiesSection />
+      <PossibilitiesSection featuresRef={featuresRef} />
       <BuyNftSection />
-      <JoinSection/>
-      <PartnersSection/>
-      <Footer/>
+      <JoinSection />
+      <PartnersSection />
+      <Footer contactRef={contactRef} />
     </div>
   );
 };
