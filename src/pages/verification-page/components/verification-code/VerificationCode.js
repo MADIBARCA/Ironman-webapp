@@ -13,13 +13,12 @@ const VerificationCode = () => {
       </h3>
 
       <p>Verification code</p>
-<<<<<<< HEAD
-      <ReactCodeInput type="text" fields={4} {...VerificationCodeInputStyles} />
+      <ReactCodeInput
+        type="number"
+        fields={4}
+        {...VerificationCodeInputStyles}
+      />
 
-=======
-      <ReactCodeInput type="number" fields={4} {...VerificationCodeInputStyles}/>
-       
->>>>>>> 480934fb94a5d209a086b487d25b909b7618f852
       <button>Submit</button>
 
       <p className="verificationCodeResendEmail">
