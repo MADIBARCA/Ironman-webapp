@@ -1,0 +1,82 @@
+.possibilitiesSection {
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.possibilitiesSectionTop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 48px;
+  padding-top: 104px;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.24);
+}
+
+.possibilitiesSectionTop h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 59px;
+  line-height: 64px;
+  letter-spacing: -0.03em;
+  color: #000000;
+  margin: 0;
+}
+
+.possibilitiesSectionTop p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: rgba(0, 0, 0, 0.7);
+  width: 670px;
+  margin: 0;
+}
+
+.possibilitiesSectionMain {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 72px;
+  margin-bottom: 104px;
+}
+
+.possibilitiesSectionColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 397px;
+}
+
+.possibilitiesSectionMain :nth-child(2) {
+    flex-direction: column-reverse;
+}
+
+.possibilitiesSectionColumn img {
+    width: 100%;
+}
+
+.possibilitiesSectionTxtCol {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.possibilitiesSectionTxtCol h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  color: #000000;
+  margin: 0;
+}
+
+.possibilitiesSectionTxtCol p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: rgba(0, 0, 0, 0.7);
+  margin: 0;
+}

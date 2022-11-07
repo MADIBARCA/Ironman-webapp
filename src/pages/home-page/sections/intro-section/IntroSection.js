@@ -18,4 +18,4 @@ const IntroSection = () => {
   );
 };
 
-export default IntroSection;
+export default IntroSection; 
