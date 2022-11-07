@@ -5,6 +5,7 @@ import GetFinisherSection from "./sections/get-finisher/GetFinisherSection";
 import IntroSection from "./sections/intro-section/IntroSection";
 
 import "./HomePage.css";
+import BuyNftSection from "./sections/buy-nft-section/BuyNftSection";
 
 const HomePage = () => {
   return (
@@ -14,6 +15,7 @@ const HomePage = () => {
       <HeroSection />
       <IntroSection />
       <GetFinisherSection />
+      <BuyNftSection />
     </div>
   );
 };
