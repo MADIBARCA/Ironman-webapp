@@ -1,3 +1,5 @@
+/* title component */
+
 .buyNftSectionTitleWrapper {
     display: flex;
     flex-direction: column;
@@ -15,6 +17,8 @@
     color: #000000;
 }
 
+/* content component */
+
 .buyNftSectionContentWrapper {
     display: flex;
     flex-direction: column;
@@ -29,4 +33,57 @@
     line-height: 32px;
     letter-spacing: -0.01em;
     color: rgba(0, 0, 0, 0.7);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.buyNftSectionContentWrapper p span {
+    margin-top: 36px;
+}
+
+.buyNftSectionContentTwitterDiv{
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000000;
+
+    margin-top: 100px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.buyNftSectionContentTwitterDiv a {
+    cursor: pointer;
+}
+
+.buyNftSectionContentTwitterDiv a img {
+    width: 10px;
+    height: 8px;
+    margin-left: 9px;
+    margin-top: 2px;
+}
+
+.buyNftSectionContentTwitterDiv a span {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #000000;}
+
+.buyNftSectionBorderDiv {
+    margin-top: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.32);
+}
+
+/* image component */
+
+.buyNftSectionImgSocial {
+    width: 630px;
+    height: 380px;
 }

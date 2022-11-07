@@ -10,4 +10,10 @@
 .buyNftSectionDiv {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 48px
+}
+
+.buyNftSectionDiv:last-child {
+    margin-top: 64px;
 }

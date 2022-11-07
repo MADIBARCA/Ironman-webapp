@@ -19,7 +19,7 @@ const HomePage = () => {
       <HeroSection />
       <IntroSection />
       <GetFinisherSection />
-      <PossibilitiesSection/>
+      <PossibilitiesSection />
       <BuyNftSection />
       <JoinSection/>
       <PartnersSection/>
