@@ -16,8 +16,8 @@ const HomePage = () => {
       <HeroSection />
       <IntroSection />
       <GetFinisherSection />
-      <BuyNftSection />
       <PossibilitiesSection />
+      <BuyNftSection />
     </div>
   );
 };

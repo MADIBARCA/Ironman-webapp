@@ -3,7 +3,7 @@
     height: 900px;
     background: linear-gradient(270deg, #000000 -18.78%, rgba(12, 12, 12, 0) 48.53%, #000000 121.7%),
      linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url(../../../../assets/home-page/hero-section/heroBg.png);
+      url(../../../../assets/homepage/hero-section/heroBg.png);
     mix-blend-mode: normal;
 
     background-size: cover;
