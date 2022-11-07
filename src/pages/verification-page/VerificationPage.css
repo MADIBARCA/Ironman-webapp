@@ -1,0 +1,11 @@
+.verificationPageWrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.verificationPageDiv {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
