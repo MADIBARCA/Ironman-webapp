@@ -1,38 +1,52 @@
 .heroSectionContentWrapper {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .heroSectionContentWrapper p {
-    margin: 0;
-    margin-bottom: 40px;
-    width: 589px;
-    font-family: 'Archivo';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 64px;
-    line-height: 70px;
-    letter-spacing: -0.03em;
-    text-transform: capitalize;
+  margin: 0;
+  margin-bottom: 40px;
+  width: 589px;
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 70px;
+  letter-spacing: -0.03em;
+  text-transform: capitalize;
 
-    color: #FFFFFF;
+  color: #ffffff;
 
-    text-shadow: 0px 4px 60px rgba(0, 0, 0, 0.4);
+  text-shadow: 0px 4px 60px rgba(0, 0, 0, 0.4);
 }
 
 .heroSectionTitle {
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    white-space: nowrap;
-    font-family: 'Archivo';
-    font-style: italic;
-    font-weight: 600;
-    font-size: 224px;
-    line-height: 244px;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
+  bottom: 31px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  white-space: nowrap;
+  font-family: "Archivo";
+  font-style: italic;
+  font-weight: 600;
+  font-size: 224px;
+  line-height: 244px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+  /* Apply animation to this element */
+  -webkit-animation: heroTitle-anim 20s linear infinite;
+  animation: heroTitle-anim 18s linear infinite;
+}
 
-    color: rgba(255, 255, 255, 0.9);
+@keyframes heroTitle-anim {
+  0% {
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-260%);
+    -webkit-transform: translateX(-260%);
+  }
 }

@@ -20,7 +20,7 @@ const HomePage = () => {
     homeRef,
     featuresRef,
     contactRef,
-  };
+  }; 
 
   const scrollHandler = (ref) => {
     const headerHeight = 0;

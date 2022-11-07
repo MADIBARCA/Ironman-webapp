@@ -3,7 +3,7 @@ import "./HeroSectionComponents.css";
 
 const HeroSectionContent = () => {
   return (
-    <div className="heroSectionContentWrapper">
+    <div className="heroSectionContentWrapper"> 
       <p>It’s not just a memento, it’s your story eternized.</p>
       <ClaimDefaultButton type={"white"} />
     </div>
