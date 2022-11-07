@@ -16,7 +16,7 @@ const VerificationPage = () => {
       <div className="verificationPageRightDiv">
         <VerificationTitle />
         <VerificationEmail />
-        {/* <VerificationCode/> */}
+        <VerificationCode/>
       </div>
     </div>
   );

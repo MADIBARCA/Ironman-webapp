@@ -13,7 +13,7 @@ const VerificationCode = () => {
       <h3>We’ve sent you a verification code at <span>you@company.com</span></h3>
 
       <p>Verification code</p>
-      <ReactCodeInput type="text" fields={4} {...VerificationCodeInputStyles}/>
+      <ReactCodeInput type="number" fields={4} {...VerificationCodeInputStyles}/>
        
       <button>Submit</button>
       
