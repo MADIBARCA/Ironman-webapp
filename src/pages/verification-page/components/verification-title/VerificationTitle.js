@@ -1,11 +1,17 @@
+import { useNavigate } from "react-router-dom";
 import arrowLeft from "../../../../assets/verification-page/verification-title/arrowLeft.png";
 
 import "./VerificationTitle.css";
 
 const VerificationTitle = () => {
+  const navigate = useNavigate();
   return (
     <div className="verificationTitleWrapper">
-      <div>
+      <div
+        onClick={() => {
+          navigate("/");
+        }}
+      >
         <img src={arrowLeft} alt="arrow" className="verificationTitleImg" />
         <span className="verificationTitleBack">Back</span>
       </div>
