@@ -11,6 +11,7 @@
     justify-content: space-between;
     position: absolute;
     top: 92px;
+    z-index: 1;
 }
 
 .headerBlockDiv {
