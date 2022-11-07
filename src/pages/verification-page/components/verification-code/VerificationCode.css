@@ -76,6 +76,7 @@
 
   color: #ffffff;
   margin-top: 32px;
+  cursor: pointer;
 }
 
 .verificationCodeResendEmail {
@@ -92,6 +93,7 @@
 
 .verificationCodeResendEmail span {
   color: #009FD6;
+  cursor: pointer;
 }
 
 
