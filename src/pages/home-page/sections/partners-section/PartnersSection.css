@@ -1,0 +1,33 @@
+.partnersSection {
+  background: linear-gradient(90deg, #000000 -3.72%, #1c2339 112.19%), #181817;
+}
+
+.partnersContainer {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+}
+
+.partnersContainer h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  margin: 0;
+}
+
+.partnersRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.partnersRow img {
+  width: 405px;
+}

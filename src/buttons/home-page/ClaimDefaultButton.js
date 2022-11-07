@@ -30,7 +30,7 @@ const ClaimDefaultButton = ({ type }) => {
 
   return (
     <a className={colorHandler(type)}>
-      Claim your Finisher NFT
+      Claim your Finisher NFT 
       <img src={imgHandler(type)} />
     </a>
   );
