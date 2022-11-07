@@ -10,7 +10,6 @@ import BuyNftSection from "./sections/buy-nft-section/BuyNftSection";
 
 import "./HomePage.css";
 
-
 const HomePage = () => {
   return (
     <div className="homePageWrapper">
@@ -19,15 +18,10 @@ const HomePage = () => {
       <HeroSection />
       <IntroSection />
       <GetFinisherSection />
-<<<<<<< HEAD
       <PossibilitiesSection />
       <BuyNftSection />
-=======
-      <PossibilitiesSection/>
-      <BuyNftSection />
-      <JoinSection/>
-      <PartnersSection/>
->>>>>>> 2d77cfa42cda9b9760a1b76e3c099a8ddd7a7953
+      <JoinSection />
+      <PartnersSection />
     </div>
   );
 };
