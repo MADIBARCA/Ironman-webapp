@@ -14,7 +14,7 @@ export const footerMenu = [
   },
   {
     name: "Claim your Finisher NFT",
-    link: "",
+    link: `${window.location.origin}/verification`,
   },
   {
     name: "Contact us",
@@ -31,16 +31,16 @@ export const footerMenu = [
 ];
 
 export const footerSocial = [
-    {
-        img: Linkedin,
-        link: "",
-      },
-      {
-        img: Twitter,
-        link: "",
-      },
-      {
-        img: Instagram,
-        link: "",
-      },
-]
+  {
+    img: Linkedin,
+    link: "",
+  },
+  {
+    img: Twitter,
+    link: "",
+  },
+  {
+    img: Instagram,
+    link: "",
+  },
+];

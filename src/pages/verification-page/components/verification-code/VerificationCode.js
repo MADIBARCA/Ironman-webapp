@@ -26,10 +26,6 @@ const VerificationCode = () => {
   });
   return (
     <div className="verificationCode">
-      <h3>
-        We’ve sent you a verification code at <span>you@company.com</span>
-      </h3>
-
       <p>Verification code</p>
       <ReactCodeInput
         type="number" 
