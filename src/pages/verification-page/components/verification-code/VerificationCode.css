@@ -1,0 +1,95 @@
+.verificationCode {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+}
+
+.verificationCode h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  color: rgba(26, 28, 28, 0.6);
+  margin: 0;
+}
+
+.verificationCode h3 span {
+  color: #1c1c1a;
+}
+
+.verificationCode p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1c1c1a;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.verificationCodePinBox form {
+  display: flex;
+  justify-content: center;
+}
+
+.verificationCodePinBox form input {
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #333;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.verificationCodePinEntry {
+  position: absolute;
+  padding-left: 15px;
+  font-family: courier, monospaced;
+  font-size: var(--spacing);
+  height: var(--height);
+  letter-spacing: var(--spacing);
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  clip: rect(0px, calc(var(--width) - 21px), var(--height), 0px);
+}
+
+.verificationCode button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 8px;
+  gap: 8px;
+  width: 100%;
+  background: #009fd6;
+  border-radius: 8px;
+  font-style: normal;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  color: #ffffff;
+  margin-top: 32px;
+}
+
+.verificationCodeResendEmail {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.01em;
+
+  color: rgba(26, 28, 28, 0.6);
+}
+
+.verificationCodeResendEmail span {
+  color: #009FD6;
+}
