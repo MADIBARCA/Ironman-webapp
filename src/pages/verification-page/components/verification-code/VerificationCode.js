@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import ReactCodeInput from "react-code-input";
 import { VerificationCodeInputStyles } from "./VerificationCodeInputStyles";
@@ -6,6 +6,24 @@ import { VerificationCodeInputStyles } from "./VerificationCodeInputStyles";
 import "./VerificationCode.css";
 
 const VerificationCode = () => {
+  const [resendCode, setResendCode] = useState(false);
+  const [timer, setTimer] = useState(60);
+
+  useEffect(() => {
+    let newsInterval = setInterval(() => {
+      if (resendCode) {
+        if (timer === 0) {
+          setTimer(60);
+          setResendCode(false);
+        } else {
+          setTimer(timer - 1);
+        }
+      }
+    }, 1000);
+    return () => {
+      clearInterval(newsInterval);
+    };
+  });
   return (
     <div className="verificationCode">
       <h3>
@@ -22,7 +40,18 @@ const VerificationCode = () => {
       <button>Submit</button>
 
       <p className="verificationCodeResendEmail">
-        Didn’t recieve a code? <span>Resend email</span>
+        Didn’t recieve a code?{" "}
+        {resendCode ? (
+          <span>Resend code in {timer}</span>
+        ) : (
+          <span
+            onClick={() => {
+              setResendCode(true);
+            }}
+          >
+            Resend email
+          </span>
+        )}
       </p>
     </div>
   );
