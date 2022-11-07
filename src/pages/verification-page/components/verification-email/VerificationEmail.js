@@ -9,10 +9,10 @@ const VerificationEmailInput = ({ label, input }) => {
   );
 };
 
-const VerificationEmail = () => {
+const VerificationEmail = ({ setVerificationType }) => {
   const formSubmitHandler = (e) => {
     e.preventDefault();
-    console.log("email form");
+    setVerificationType("code");
   };
 
   return (
