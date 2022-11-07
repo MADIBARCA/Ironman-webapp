@@ -12,6 +12,18 @@ code {
     monospace;
 }
 
+/* Chrome, Safari, Edge, Opera */
+.react-code-input input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.react-code-input input[type=number] {
+  -moz-appearance: textfield;
+}
+
 html {
   scroll-behavior: smooth;
 }

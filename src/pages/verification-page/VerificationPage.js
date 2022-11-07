@@ -26,11 +26,17 @@ const VerificationPage = () => {
         <VerificationImg />
       </div>
       <div className="verificationPageRightDiv">
+<<<<<<< HEAD
         <VerificationTitle
           verificationType={verificationType}
           setVerificationType={setVerificationType}
         />
         {typeHandler()}
+=======
+        <VerificationTitle />
+        <VerificationEmail />
+        <VerificationCode/>
+>>>>>>> 480934fb94a5d209a086b487d25b909b7618f852
       </div>
     </div>
   );
