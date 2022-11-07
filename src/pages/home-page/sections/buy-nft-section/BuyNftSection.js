@@ -12,7 +12,7 @@ const BuyNftSection = () => {
         <BuyNftSectionContent />
       </div>
     </div>
-  );
+  ); 
 };
 
 export default BuyNftSection;

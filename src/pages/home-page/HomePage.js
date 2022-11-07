@@ -7,9 +7,9 @@ import PossibilitiesSection from "./sections/possibilities-section/Possibilities
 import JoinSection from "./sections/join-section/JoinSection";
 import PartnersSection from "./sections/partners-section/PartnersSection";
 import BuyNftSection from "./sections/buy-nft-section/BuyNftSection";
+import Footer from "../../layout/footer/Footer";
 
 import "./HomePage.css";
-
 
 const HomePage = () => {
   return (
@@ -23,6 +23,7 @@ const HomePage = () => {
       <BuyNftSection />
       <JoinSection/>
       <PartnersSection/>
+      <Footer/>
     </div>
   );
 };
