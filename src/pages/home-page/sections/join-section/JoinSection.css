@@ -1,0 +1,35 @@
+.joinSection {
+  background: linear-gradient(90deg, #000000 -3.72%, #1c2339 112.19%);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.joinSectionContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.joinSectionImg{
+  width: 560px;
+}
+
+.joinSectionLeftPart {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.joinSectionTxt {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 70px;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+
+.joinSectionLeftPart span {
+  display: block;
+}

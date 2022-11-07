@@ -6,6 +6,8 @@ import IntroSection from "./sections/intro-section/IntroSection";
 import PossibilitiesSection from "./sections/possibilities-section/PossibilitiesSection";
 
 import "./HomePage.css";
+import JoinSection from "./sections/join-section/JoinSection";
+import PartnersSection from "./sections/partners-section/PartnersSection";
 
 
 const HomePage = () => {
@@ -17,6 +19,8 @@ const HomePage = () => {
       <IntroSection />
       <GetFinisherSection />
       <PossibilitiesSection/>
+      <JoinSection/>
+      <PartnersSection/>
     </div>
   );
 };
