@@ -19,7 +19,7 @@ const VerificationEmail = ({ setVerificationType }) => {
     <div className="verificationEmailWrapper">
       <form onSubmit={formSubmitHandler}>
         <VerificationEmailInput
-          label={"Email"}
+          label={"Email"} 
           input={{ placeholder: "you@example.com" }}
         />
         <VerificationEmailInput
