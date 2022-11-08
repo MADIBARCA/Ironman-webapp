@@ -28,8 +28,9 @@ const VerificationCode = () => {
     <div className="verificationCode">
       <p>Verification code</p>
       <ReactCodeInput
-        type="number"
+        type="number" 
         fields={4}
+        placeholder={"0"}
         {...VerificationCodeInputStyles}
       />
 
