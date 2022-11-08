@@ -23,7 +23,7 @@ const VerificationPage = () => {
   return (
     <div className="verificationPageWrapper">
       <div className="verificationPageLeftDiv">
-        <VerificationImg /> 
+        <VerificationImg />
       </div>
       <div className="verificationPageRightDiv">
         <VerificationTitle

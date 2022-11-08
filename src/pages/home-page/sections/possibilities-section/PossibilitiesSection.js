@@ -7,7 +7,7 @@ import "./PossibilitiesSection.css";
 const PossibilitiesSection = ({ featuresRef }) => {
   return (
     <div className="defaultContainer" ref={featuresRef}>
-      <seciton className="possibilitiesSection">
+      <section className="possibilitiesSection">
         <div className="possibilitiesSectionTop">
           <h1>Anything is possible</h1>
           <p>
@@ -29,7 +29,7 @@ const PossibilitiesSection = ({ featuresRef }) => {
             </div>
           ))}
         </div>
-      </seciton>
+      </section>
     </div>
   );
 };

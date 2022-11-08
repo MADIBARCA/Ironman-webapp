@@ -1,4 +1,4 @@
-.headerWrapper {
+.headerWrapperBannerActive {
     display: flex;
     flex-direction: row;
     height: 84px;
@@ -12,6 +12,23 @@
     position: absolute;
     top: 92px;
     z-index: 1;
+}
+
+.headerWrapperBannerDisabled {
+    display: flex;
+    flex-direction: row;
+    height: 84px;
+    width: 100%;
+    padding: 17px 80px;
+    padding-top: 41px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+
+    justify-content: space-between;
+    position: absolute;
+    top: 0px;
+    z-index: 5;
 }
 
 .headerBlockDiv {
