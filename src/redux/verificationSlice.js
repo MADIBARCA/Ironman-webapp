@@ -6,9 +6,6 @@ const verificationSlice = createSlice({
     accessToken: localStorage.getItem("accessToken")
       ? localStorage.getItem("accessToken")
       : null,
-    refreshToken: localStorage.getItem("refreshToken")
-      ? localStorage.getItem("refreshToken")
-      : null,
     email: localStorage.getItem("email") ? localStorage.getItem("email") : null,
   },
   reducers: {
@@ -19,14 +16,6 @@ const verificationSlice = createSlice({
         localStorage.removeItem("accessToken");
       }
       state.accessToken = action.payload;
-    },
-    addRefreshToken(state, action) {
-      if (action.payload) {
-        localStorage.setItem("refreshToken", action.payload);
-      } else {
-        localStorage.removeItem("refreshToken");
-      }
-      state.refreshToken = action.payload;
     },
     addEmail(state, action) {
       if (action.payload) {

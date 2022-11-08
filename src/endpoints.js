@@ -1,3 +1,5 @@
 export const endpoints = {
-  verification: "/verification",
+  register: "/api/user/register",
+  sendEmail: "/api/user/send-mail",
+  emailVerify: "/api/user/email/verify",
 };
