@@ -1,0 +1,4 @@
+.assetPageWrapper {
+    display: flex;
+    flex-direction: column;
+}
