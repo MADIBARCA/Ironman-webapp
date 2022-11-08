@@ -1,0 +1,49 @@
+.assetPageRightPart {
+  display: flex;
+  flex-direction: column;
+  width: 480px;
+}
+
+.priceBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.priceBoxTop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.priceBoxBtm {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 8px;
+  background: #ffeff1;
+  border-radius: 16px;
+  width: max-content;
+  width: max-content;
+}
+
+.assetPageSubtitle {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.08px;
+  color: #009fd6;
+}
+
+.assetPageTitle {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: -0.02em;
+  color: #1a1c1c;
+}

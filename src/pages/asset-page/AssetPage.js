@@ -4,7 +4,10 @@ import "./AssetPage.css";
 const AssetPage = () => {
   return (
     <div className="assetPageWrapper">
-      <HeaderAsset />
+      <HeaderAsset /> 
+      <div>
+        
+      </div>
     </div>
   );
 };
