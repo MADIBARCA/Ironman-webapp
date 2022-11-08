@@ -18,6 +18,27 @@
   gap: 8px;
 }
 
+.priceBoxTop h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  color: #102228;
+  margin: 0;
+}
+
+.priceBoxTop p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: -0.04em;
+  text-decoration-line: line-through;
+  color: rgba(26, 28, 28, 0.4);
+  margin: 0;
+}
+
 .priceBoxBtm {
   display: flex;
   flex-direction: row;
@@ -27,7 +48,21 @@
   background: #ffeff1;
   border-radius: 16px;
   width: max-content;
-  width: max-content;
+  height: max-content;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #c70f29;
+}
+
+.assetPageRightTop {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 24px;
+    border-bottom: 0.5px solid rgba(28, 28, 26, 0.2);
+    margin-bottom: 24px;
 }
 
 .assetPageSubtitle {
@@ -37,6 +72,8 @@
   line-height: 28px;
   letter-spacing: -0.08px;
   color: #009fd6;
+  margin: 0;
+  margin-bottom: 16px;
 }
 
 .assetPageTitle {
@@ -46,4 +83,49 @@
   line-height: 60px;
   letter-spacing: -0.02em;
   color: #1a1c1c;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.assetPriceDetails {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.assetPageDiscountAlert {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 8px;
+
+  width: max-content;
+  height: max-content;
+
+  background: #ecf9fd;
+  /* Success/50 */
+
+  border: 1px solid #ecfdf3;
+  border-radius: 8px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  color: #009fd6;
+}
+
+.assetPageDiscountAlert img {
+  width: 20px;
+  height: 20px;
+}
+
+.assetPageRightMain {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }

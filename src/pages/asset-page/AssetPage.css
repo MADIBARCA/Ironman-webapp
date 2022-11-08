@@ -1,9 +1,14 @@
 .assetPageWrapper {
     display: flex;
     flex-direction: column;
+    padding-top: 142px;
+    padding-bottom: 80px;
 }
 
 .assetPageContainer {
     padding-left: 188px;
     padding-right: 188px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }

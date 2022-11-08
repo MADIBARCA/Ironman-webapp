@@ -1,0 +1,45 @@
+.tabsMenuContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 32px;
+}
+
+.tabsMenuItems {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  padding: 4px;
+  gap: 8px;
+  justify-content: center;
+  height: max-content;
+  background: #f9fbfb;
+  border: 1px solid #f2f6f7;
+  border-radius: 8px;
+}
+
+.tabsMenuItems a {
+  border-radius: 6px;
+  padding: 8px;
+  width: 152px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.defaultTabItem {
+    color: rgba(26, 28, 28, 0.6);
+}
+
+.activeTabItem {
+    color: #1A1C1C;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px rgba(16, 24, 40, 0.06);
+}

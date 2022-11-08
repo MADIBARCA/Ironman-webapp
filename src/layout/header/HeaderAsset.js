@@ -8,7 +8,7 @@ const HeaderAsset = () => {
     <div className={"headerWrapperBannerDisabled"}>
       <HeaderLogo />
       <div className="headerBlockDiv" style={{ marginRight: "-45.64px" }}>
-        <HeaderLang />
+        <HeaderLang /> 
       </div>
     </div>
   );

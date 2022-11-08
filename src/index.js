@@ -18,7 +18,7 @@ root.render(
         crossOrigin={"true"}
       />
       <link
-        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@500&display=swap"
         rel="stylesheet"
       />
       <App />
