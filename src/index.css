@@ -1,13 +1,13 @@
 body {
   margin: 0;
-  font-family: 'Archivo';
+  font-family: "Archivo";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -19,11 +19,10 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-.react-code-input input[type=number] {
+.react-code-input input[type="number"] {
   -moz-appearance: textfield;
 }
- 
+
 html {
   scroll-behavior: smooth;
 }
-
