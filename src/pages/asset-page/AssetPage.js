@@ -2,15 +2,21 @@ import HeaderAsset from "../../layout/header/HeaderAsset";
 import AssetPageRightPart from "./components/AssetPageRightPart";
 
 import "./AssetPage.css";
+import Footer from "../../layout/footer/Footer";
+import AssetPageLeftPart from "./components/AssetPageLeftPart";
 
 const AssetPage = () => {
   return (
-    <div className="assetPageWrapper">
-      <HeaderAsset />  
-      <div className="assetPageContainer">
-        <AssetPageRightPart/>
+    <>
+      <HeaderAsset />
+      <div className="assetPageWrapper">
+        <div className="assetPageContainer">
+          <AssetPageLeftPart/>
+          <AssetPageRightPart />
+        </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 };
 
