@@ -7,6 +7,7 @@ const verificationSlice = createSlice({
       ? localStorage.getItem("accessToken")
       : null,
     email: localStorage.getItem("email") ? localStorage.getItem("email") : null,
+    id: localStorage.getItem("id") ? localStorage.getItem("id") : null,
   },
   reducers: {
     addAccessToken(state, action) {
@@ -25,9 +26,16 @@ const verificationSlice = createSlice({
       }
       state.email = action.payload;
     },
+    addId(state, action) {
+      if (action.payload) {
+        localStorage.setItem("id", action.payload);
+      } else {
+        localStorage.removeItem("id", action.payload);
+      }
+      state.id = action.payload;
+    },
   },
 });
 
 export default verificationSlice.reducer;
-export const { addAccessToken, addRefreshToken, addEmail } =
-  verificationSlice.actions;
+export const { addAccessToken, addEmail, addId } = verificationSlice.actions;

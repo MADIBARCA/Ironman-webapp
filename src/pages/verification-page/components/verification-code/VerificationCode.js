@@ -22,6 +22,7 @@ const VerificationCode = () => {
   const [code, setCode] = useState(null);
 
   const email = useSelector((state) => state.verification.email);
+  const id = useSelector((state) => state.verification.id);
 
   const verificationFunc = () => {
     axiosEmailVerify(email, code).then((response) => {
@@ -29,12 +30,12 @@ const VerificationCode = () => {
         axiosRegister(email).then((response) => {
           if (response.status === 200) {
             dispatch(addAccessToken(response.data.data.data));
-            navigate("/");
+            navigate(`/asset/${id}`);
           }
         });
       } else {
         dispatch(addAccessToken(response.data.data.token));
-        navigate("/");
+        navigate(`/asset/${id}`);
       }
     });
   };

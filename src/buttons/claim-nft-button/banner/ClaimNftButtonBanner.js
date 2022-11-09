@@ -3,7 +3,7 @@ import arrowRight from "../../../assets/buttons/arrowRight.png";
 
 import "./ClaimNftButtonBanner.css";
 
-const ClaimNftButtonBanner = () => {
+const ClaimNftButtonBanner = ({ style }) => {
   const navigate = useNavigate();
   return (
     <div

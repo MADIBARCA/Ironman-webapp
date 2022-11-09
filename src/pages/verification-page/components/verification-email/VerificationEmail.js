@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { axiosSendEmail } from "../../../../axios/axiosAuth";
-import { addEmail } from "../../../../redux/verificationSlice";
+import { axiosGetId } from "../../../../axios/axiosId";
+import { addEmail, addId } from "../../../../redux/verificationSlice";
 import "./VerificationEmail.css";
 
 const VerificationEmailInput = ({ label, input, email, setEmail }) => {
@@ -21,21 +22,42 @@ const VerificationEmailInput = ({ label, input, email, setEmail }) => {
 
 const VerificationEmail = ({ setVerificationType }) => {
   const [email, setEmail] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+  const dispatch = useDispatch();
+
   const formSubmitHandler = (e) => {
     e.preventDefault();
-    setVerificationType("code");
+    axiosGetId(email).then((resp) => {
+      console.log(resp);
+      if (resp.status === 200) {
+        dispatch(addId(resp.data.data.data._id));
+        axiosSendEmail(email).then((response) => {
+          if (response.status === 200) {
+            setVerificationType("code");
+            dispatch(addEmail(email));
+          }
+        });
+      }
+      if (resp.status !== 200) {
+        setErrorMessage("Not in the list");
+      }
+    });
   };
-  const dispatch = useDispatch();
 
   return (
     <div className="verificationEmailWrapper">
       <form onSubmit={formSubmitHandler}>
-        <VerificationEmailInput
-          label={"Email"}
-          input={{ placeholder: "you@example.com" }}
-          email={email}
-          setEmail={setEmail}
-        />
+        <div className="verificationEmailInput">
+          <label>Email</label>
+          <input
+            placeholder={"you@example.com"}
+            onChange={(e) => {
+              setEmail(e.target.value);
+            }}
+            value={email}
+          />
+          <span style={{ color: "red" }}>{errorMessage}</span>
+        </div>
         <VerificationEmailInput
           label={"First Name"}
           input={{ placeholder: "Your name" }}
@@ -44,13 +66,7 @@ const VerificationEmail = ({ setVerificationType }) => {
           label={"Your start number"}
           input={{ placeholder: "eg:100" }}
         />
-        <button
-          className="verificationEmailWrapperButton"
-          onClick={() => {
-            dispatch(addEmail(email));
-            axiosSendEmail(email);
-          }}
-        >
+        <button className="verificationEmailWrapperButton">
           <span>Check eligibility</span>
         </button>
       </form>
