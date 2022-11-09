@@ -17,20 +17,13 @@ const AssetPage = () => {
     });
   }, [id]);
   return (
-<<<<<<< HEAD
-    <div className="assetPageWrapper">
-      <HeaderAsset />
-      <div className="assetPageContainer">
-        <AssetPageRightPart />
-=======
     <>
       <HeaderAsset />
       <div className="assetPageWrapper">
         <div className="assetPageContainer">
-          <AssetPageLeftPart/>
+          <AssetPageLeftPart />
           <AssetPageRightPart />
         </div>
->>>>>>> 809899c9af84cf576d7f56968c0cf372a64b34aa
       </div>
       <Footer />
     </>
