@@ -9,6 +9,13 @@
     width: 522px;
     height: 522px;
     background: #0B0B0B;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.assetPageLeftImgBox img {
+  height: 100%;
 }
 
 .assetPageLeftImgTab {
@@ -24,6 +31,14 @@
 
 .assetPageLeftImgTabElement {
     background: #0B0B0B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.assetPageLeftImgTabElement img {
+  height: 100%;
 }
 
 .assetPageLeftImgTabMid {

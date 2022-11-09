@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 
 import HeaderAsset from "../../layout/header/HeaderAsset";
@@ -11,26 +11,32 @@ import AssetPageLeftPart from "./components/AssetPageLeftPart";
 
 const AssetPage = () => {
   const id = useSelector((state) => state.verification.id);
+
+  const [firstActive, setFirstActive] = useState(true);
+  const [imgPathFirst, setImgPathFirst] = useState("");
+  const [imgPathSecond, setImgPathSecond] = useState("");
+
   useEffect(() => {
     axiosGetAsset(id).then((response) => {
-      console.log(response);
+      console.log(response.data.data.Ironman.metaDataUrlGif);
+      setImgPathFirst(response.data.data.Ironman.metaDataUrlGif);
+      setImgPathSecond(response.data.data.Ironman.metaDataUrlImg);
     });
   }, [id]);
   return (
-<<<<<<< HEAD
-    <div className="assetPageWrapper">
-      <HeaderAsset />
-      <div className="assetPageContainer">
-        <AssetPageRightPart />
-=======
     <>
       <HeaderAsset />
       <div className="assetPageWrapper">
         <div className="assetPageContainer">
-          <AssetPageLeftPart/>
+          <AssetPageLeftPart
+            imgPathFirst={imgPathFirst}
+            imgPathSecond={imgPathSecond}
+            handleSwitchFirst={() => setFirstActive(true)}
+            handleSwitchSecond={() => setFirstActive(false)}
+            firstActive={firstActive}
+          />
           <AssetPageRightPart />
         </div>
->>>>>>> 809899c9af84cf576d7f56968c0cf372a64b34aa
       </div>
       <Footer />
     </>
