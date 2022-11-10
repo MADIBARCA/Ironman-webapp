@@ -67,7 +67,6 @@ const VerificationCode = () => {
   });
 
   useEffect(() => {
-    console.log(code.length);
     if (code.length == 4) {
       setLoader(true);
       verificationFunc();
