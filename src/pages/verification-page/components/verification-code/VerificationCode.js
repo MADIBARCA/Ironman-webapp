@@ -19,13 +19,16 @@ const VerificationCode = () => {
 
   const [resendCode, setResendCode] = useState(false);
   const [timer, setTimer] = useState(60);
-  const [code, setCode] = useState(null);
+  const [code, setCode] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+  const [loader, setLoader] = useState(false);
 
   const email = useSelector((state) => state.verification.email);
   const id = useSelector((state) => state.verification.id);
 
   const verificationFunc = () => {
     axiosEmailVerify(email, code).then((response) => {
+      setLoader(false);
       if (response.status === 200 && !response.data.data.isRegistered) {
         axiosRegister(email).then((response) => {
           if (response.status === 200) {
@@ -33,9 +36,16 @@ const VerificationCode = () => {
             navigate(`/asset/${id}`);
           }
         });
-      } else {
+      }
+      if (response.status === 200 && response.data.data.isRegistered) {
         dispatch(addAccessToken(response.data.data.token));
         navigate(`/asset/${id}`);
+      }
+      if (response.status === 400) {
+        setErrorMessage("Invalid verification code");
+      }
+      if (response.status === 500) {
+        setErrorMessage("Something went wrong");
       }
     });
   };
@@ -55,26 +65,40 @@ const VerificationCode = () => {
       clearInterval(newsInterval);
     };
   });
+
+  useEffect(() => {
+    console.log(code.length);
+    if (code.length == 4) {
+      setLoader(true);
+      verificationFunc();
+    }
+  }, [code]);
   return (
     <div className="verificationCode">
       <p>Verification code</p>
-      <ReactCodeInput
-        type="number"
-        fields={4}
-        placeholder={"0"}
-        onChange={(e) => {
-          setCode(e);
-        }}
-        {...VerificationCodeInputStyles}
-      />
-
-      <button
+      {!loader && (
+        <ReactCodeInput
+          type="number"
+          fields={4}
+          placeholder={"0"}
+          onChange={(e) => {
+            setCode(e);
+            setErrorMessage("");
+          }}
+          {...VerificationCodeInputStyles}
+        />
+      )}
+      {loader && <span>Loading...</span>}
+      {errorMessage && (
+        <span style={{ color: "red", marginTop: "10px" }}>{errorMessage}</span>
+      )}
+      {/*<button
         onClick={() => {
           verificationFunc();
         }}
       >
         Submit
-      </button>
+      </button>*/}
 
       <p className="verificationCodeResendEmail">
         Didn’t recieve a code?{" "}

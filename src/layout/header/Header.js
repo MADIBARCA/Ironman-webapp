@@ -1,8 +1,11 @@
 import { useSelector } from "react-redux";
+
 import ClaimNftButtonHeader from "../../buttons/claim-nft-button/header/ClaimNftHeaderButton";
 import HeaderLang from "./components/header-lang/HeaderLang";
 import HeaderLogo from "./components/header-logo/HeaderLogo";
 import HeaderNavButtons from "./components/header-nav-buttons/HeaderNavButtons";
+import arrowDown from "../../assets/header/arrowDown.png";
+import ironmanLogo from "../../assets/header/ironmanLogo.png";
 
 import "./Header.css";
 
@@ -17,11 +20,11 @@ const Header = ({ refs, scrollHandler }) => {
       }
     >
       <div className="headerBlockDiv">
-        <HeaderLogo />
+        <HeaderLogo src={ironmanLogo} />
         <HeaderNavButtons scrollHandler={scrollHandler} refs={refs} />
       </div>
       <div className="headerBlockDiv">
-        <HeaderLang />
+        <HeaderLang style={{ color: "white", src: arrowDown }} />
         <ClaimNftButtonHeader />
       </div>
     </div>

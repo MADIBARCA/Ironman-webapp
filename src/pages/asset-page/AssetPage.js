@@ -18,7 +18,6 @@ const AssetPage = () => {
 
   useEffect(() => {
     axiosGetAsset(id).then((response) => {
-      console.log(response.data.data.Ironman.metaDataUrlGif);
       setImgPathFirst(response.data.data.Ironman.metaDataUrlGif);
       setImgPathSecond(response.data.data.Ironman.metaDataUrlImg);
     });

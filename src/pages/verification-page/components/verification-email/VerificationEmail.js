@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { axiosSendEmail } from "../../../../axios/axiosAuth";
 import { axiosGetId } from "../../../../axios/axiosId";
@@ -22,7 +22,11 @@ const VerificationEmailInput = ({ label, input, email, setEmail }) => {
 
 const VerificationEmail = ({ setVerificationType }) => {
   const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [number, setNumber] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+  const [isValidEmail, setIsValidEmail] = useState(false);
+  const [btnDisabled, setBtnDisalbed] = useState(true);
   const dispatch = useDispatch();
 
   const formSubmitHandler = (e) => {
@@ -44,6 +48,28 @@ const VerificationEmail = ({ setVerificationType }) => {
     });
   };
 
+  const emailValidation = () => {
+    const pattern =
+      /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (email.match(pattern)) {
+      setIsValidEmail(true);
+    } else {
+      setIsValidEmail(false);
+    }
+  };
+
+  const btnHandler = () => {
+    if (!isValidEmail || !name || !number) {
+      setBtnDisalbed(true);
+    } else {
+      setBtnDisalbed(false);
+    }
+  };
+
+  useEffect(() => {
+    btnHandler();
+  }, [email, number, name]);
+
   return (
     <div className="verificationEmailWrapper">
       <form onSubmit={formSubmitHandler}>
@@ -53,20 +79,37 @@ const VerificationEmail = ({ setVerificationType }) => {
             placeholder={"you@example.com"}
             onChange={(e) => {
               setEmail(e.target.value);
+              emailValidation();
             }}
             value={email}
           />
           <span style={{ color: "red" }}>{errorMessage}</span>
         </div>
-        <VerificationEmailInput
-          label={"First Name"}
-          input={{ placeholder: "Your name" }}
-        />
-        <VerificationEmailInput
-          label={"Your start number"}
-          input={{ placeholder: "eg:100" }}
-        />
-        <button className="verificationEmailWrapperButton">
+        <div className="verificationEmailInput">
+          <label>First name</label>
+          <input
+            placeholder={"Your name"}
+            onChange={(e) => {
+              setName(e.target.value);
+            }}
+            value={name}
+          />
+        </div>
+        <div className="verificationEmailInput">
+          <label>Your start number</label>
+          <input
+            placeholder={"eg:100"}
+            onChange={(e) => {
+              setNumber(e.target.value);
+            }}
+            value={number}
+          />
+        </div>
+        <button
+          className="verificationEmailWrapperButton"
+          disabled={btnDisabled}
+          style={!btnDisabled ? {} : { background: "gray" }}
+        >
           <span>Check eligibility</span>
         </button>
       </form>

@@ -14,20 +14,14 @@ const App = () => {
       <Route path="/" element={<HomePage />} />
       {token ? (
         <>
-          <Route path={`/asset/:assetId`} element={<AssetPage />} />
+          <Route path={`/asset`} element={<AssetPage />} />
 
-          <Route
-            path="/verification"
-            element={<Navigate to="/asset/:assetId" />}
-          />
+          <Route path="/verification" element={<Navigate to="/asset" />} />
         </>
       ) : (
         <>
           <Route path="/verification" element={<VerificationPage />} />
-          <Route
-            path={`/asset/:assetId`}
-            element={<Navigate to="/verification" />}
-          />
+          <Route path={`/asset`} element={<Navigate to="/verification" />} />
         </>
       )}
     </Routes>
