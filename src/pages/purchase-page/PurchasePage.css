@@ -1,4 +1,4 @@
-.verificationPageWrapper {
+.purchasePageWrapper {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -8,7 +8,7 @@
     -moz-box-sizing: border-box;
 }
 
-.verificationPageLeftDiv {
+.purchasePageLeftDiv {
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -16,11 +16,11 @@
     height: 100vh;
 }
 
-.verificationPageLeftDiv  img {
+.purchasePageLeftDiv  img {
     height: 100vh;
 }
 
-.verificationPageRightDiv {
+.purchasePageRightDiv {
     display: flex;
     flex-direction: column;
     overflow-x: auto;

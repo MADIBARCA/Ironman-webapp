@@ -1,5 +1,7 @@
 import React from "react";
 
+import { useNavigate } from "react-router-dom";
+
 import DiscountBox from "./price-box/DiscountBox";
 import PriceBox from "./price-box/PriceBox";
 
@@ -13,6 +15,9 @@ import AssetPageFeatures from "./tabs-menu/components/features/AssetPageFeatures
 import AssetPageDetails from "./tabs-menu/components/asset-details/AssetPageDetails";
 
 const AssetPageRightPart = () => {
+
+  const navigate = useNavigate();
+
   const itemsArray = [
     {
       title: "Overview",
@@ -43,8 +48,8 @@ const AssetPageRightPart = () => {
         </div>
       </div>
 
-      <div className="assetPageRightMain">
-        <ProceedButton disabled={false} text={"Claim your finisher NFT"} />
+      <div className="assetPageRightMain"> 
+        <ProceedButton disabled={false} text={"Claim your finisher NFT"} onClick={()=>navigate('/purchase')}/>
 
         <TabsMenu itemsArray={itemsArray} />
       </div>

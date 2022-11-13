@@ -1,0 +1,82 @@
+.purchaseForm {
+  width: 360px;
+  margin-top: 24px;
+}
+
+.purchasePaymentTable {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 16px;
+  max-width: 360px;
+  background: #f6f9f9;
+  border-radius: 8px;
+}
+
+.purchasePaymentTableRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.purchasePaymentTableRow p {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.purchasePaymentTableRow:last-child p {
+  color: #000000;
+}
+
+.purchasePaymentInputBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.purchasePaymentInputBox input {
+  width: 77.5%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px 14px;
+  gap: 8px;
+  background: #ffffff;
+  border: 1px solid #d0d9dd;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  outline: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #667d85;
+}
+
+.purchasePaymentInputBox button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 14px;
+  background: #009fd6;
+  /* Shadow/xs */
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #ffffff;
+}

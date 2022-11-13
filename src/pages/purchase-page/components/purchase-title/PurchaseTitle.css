@@ -1,0 +1,63 @@
+.purchaseTitleWrapper {
+    display: flex;
+    flex-direction: column;   
+}
+
+.purchaseTitleImg {
+    width: 18px;
+    height: 7.5px;
+    margin-right: 11px;
+}
+
+.purchaseTitleWrapper div {
+    cursor: pointer;
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.purchaseTitleBack {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: #1C1C1A;
+    
+}
+
+.purchaseTitleWrapper h1 {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+    
+    letter-spacing: -0.02em;
+    
+    color: #1A1C1C;
+}
+
+.purchaseTitleWrapper p {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+    color: rgba(26, 28, 28, 0.6);
+    margin: 0;
+}
+
+.purchaseTitleWrapper span {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+    color: black;
+    margin: 0;
+}

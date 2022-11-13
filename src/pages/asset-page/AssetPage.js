@@ -21,7 +21,7 @@ const AssetPage = () => {
       setImgPathFirst(response.data.data.Ironman.metaDataUrlGif);
       setImgPathSecond(response.data.data.Ironman.metaDataUrlImg);
     });
-  }, [id]);
+  }, [id]); 
   return (
     <>
       <HeaderAsset />
@@ -34,7 +34,7 @@ const AssetPage = () => {
             handleSwitchSecond={() => setFirstActive(false)}
             firstActive={firstActive}
           />
-          <AssetPageRightPart />
+          <AssetPageRightPart /> 
         </div>
       </div>
       <Footer />
